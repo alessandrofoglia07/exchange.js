@@ -1,6 +1,6 @@
 {
     "name": "exchange.js",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "100% FREE and open source currency converter library for Node.js",
     "funding": {
         "type": "individual",
@@ -9,8 +9,8 @@
     "exports": {
         ".": {
             "import": {
-                "types": "./lib/module/index.d.ts",
-                "default": "./lib/module/index.js"
+                "types": "./lib/esm/index.d.ts",
+                "default": "./lib/esm/index.js"
             },
             "require": {
                 "types": "./lib/cjs/index.d.cts",
@@ -18,8 +18,8 @@
             },
             "types": {
                 "require": "./lib/cjs/index.d.cts",
-                "import": "./lib/module/index.d.ts",
-                "default": "./lib/module/index.d.ts"
+                "import": "./lib/esm/index.d.ts",
+                "default": "./lib/esm/index.d.ts"
             }
         }
     },
@@ -27,7 +27,7 @@
         "node": ">=6.0.0"
     },
     "main": "lib/cjs/index.cjs",
-    "module": "lib/module/index.js",
+    "module": "lib/esm/index.js",
     "types": "lib/cjs/index.d.cts",
     "type": "module",
     "files": [
@@ -44,8 +44,8 @@
         "build": "npm run build:win || npm run build:linux",
         "firstBuild": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && node transformer.js",
         "pretest": "npm run build:win || npm run build:linux",
-        "test": "jest",
-        "coverage": "jest --coverage",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
         "prepublishOnly": "npm run build",
         "lint": "eslint . --ext .ts",
         "fixLint": "eslint . --ext .ts --fix"
@@ -70,6 +70,6 @@
     },
     "dependencies": {
         "cheerio": "^1.0.0-rc.12",
-        "node-fetch": "^3.3.1"
+        "puppeteer": "^20.9.0"
     }
 }

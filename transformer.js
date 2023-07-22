@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const directoryPath = path.join(__dirname, 'lib', 'cjs');
-const directoryPath2 = path.join(__dirname, 'lib', 'cjs', 'utils');
 
 function renameFiles(dirPath) {
     readdir(dirPath, (err, files) => {
@@ -98,7 +97,6 @@ function renameFiles(dirPath) {
     });
 }
 renameFiles(directoryPath);
-renameFiles(directoryPath2);
 
 function changeSizeBadgeInREADME() {
     const READMEPath = path.join(__dirname, 'README.md');
