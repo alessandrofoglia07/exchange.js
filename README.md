@@ -53,6 +53,29 @@ convert('USD', 'EUR', 10).then((result) => {
 });
 ```
 
+### **convertCrypto()**
+
+```typescript
+import { convertCrypto } from 'exchange.js';
+
+// convertCrypto(from: string (Currency type), to: string (Currency type), amount: number) => Promise<number>
+convertCrypto('BTC', 'ETH', 10).then((result) => {
+    console.log(result); // This will log the value of 10 BTC in ETH
+});
+```
+
+### Supported currencies / cryptocurrencies
+
+```typescript
+import { supportedCurrencies, supportedCryptoCurrencies } from 'exchange.js';
+
+console.log(supportedCurrencies);
+// This will log an array of supported currencies
+
+console.log(supportedCryptoCurrencies);
+// This will log an array of supported cryptocurrencies
+```
+
 ### Typescript support (TS only)
 
 ```typescript

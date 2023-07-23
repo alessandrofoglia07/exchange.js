@@ -1,6 +1,6 @@
 {
     "name": "exchange.js",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "100% FREE and open source currency converter library for Node.js",
     "funding": {
         "type": "individual",
@@ -52,10 +52,19 @@
     },
     "keywords": [
         "currency",
+        "crypto",
         "converter",
         "exchange",
         "exchange.js",
         "money",
+        "cryptocurrency",
+        "currency-converter",
+        "currency-conversion",
+        "BTC",
+        "ETH",
+        "USD",
+        "EUR",
+        "GBP",
         "library"
     ],
     "author": "alessandrofoglia07",

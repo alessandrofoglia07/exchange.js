@@ -1,3 +1,3 @@
-import { Currency } from "./types.cjs";
-declare const supportedCurrencies: Currency[];
-export default supportedCurrencies;
+import { Currency, CryptoCurrency } from "./types.cjs";
+export declare const supportedCurrencies: Currency[];
+export declare const supportedCryptoCurrencies: CryptoCurrency[];

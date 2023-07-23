@@ -144,3 +144,12 @@ export type Currency =
     | "XOF"
     | "YER"
     | "ZMW";
+
+export type CryptoCurrency =
+    | "0x" | "AION" | "ARDR" | "ARK" | "REP" | "BNT" | "BAT" | "BNB" | "BTS" | "BTC" | "BCH" | "BTG"
+    | "BCN" | "BTM" | "ADA" | "LINK" | "DASH" | "DCR" | "DGB" | "XDN" | "DGD" | "DOGE" | "EOS" | "ETC"
+    | "ENG" | "ETH" | "FCT" | "FUN" | "GNO" | "GNT" | "GRS" | "HSR" | "ICX" | "KNC" | "LSK" | "LTC"
+    | "MANA" | "MAID" | "MONA" | "XMR" | "XEM" | "NEO" | "NANO" | "NEBL" | "NXS" | "NXT" | "OMG" | "ONT"
+    | "PIVX" | "PPT" | "POWR" | "QASH" | "QTUM" | "QSP" | "RDN" | "RDD" | "REQ" | "SALT" | "SAN" | "SC"
+    | "SNT" | "STEEM" | "XLM" | "STRAT" | "SUB" | "SYS" | "TRX" | "PAY" | "USDT" | "TNB" | "XVG" | "VERI"
+    | "VGX" | "WTC" | "WAN" | "WAVES" | "XRP" | "ZCL" | "ZIL" | "ELF" | "ICN";

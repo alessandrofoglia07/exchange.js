@@ -1,3 +1,3 @@
-import { Currency } from "./types.js";
-declare const supportedCurrencies: Currency[];
-export default supportedCurrencies;
+import { Currency, CryptoCurrency } from "./types.js";
+export declare const supportedCurrencies: Currency[];
+export declare const supportedCryptoCurrencies: CryptoCurrency[];
